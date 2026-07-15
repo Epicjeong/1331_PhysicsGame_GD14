@@ -2709,7 +2709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c0e4c23e30107b408c1af6657d0172c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Timer
-  _timer: 0
+  _time: 0
   _timeText: {fileID: 409228743}
 --- !u!1 &410087039
 GameObject:
@@ -8882,31 +8882,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2a565efbdeeda4b45b3c8864082211d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.24
+      value: -11.234264
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a565efbdeeda4b45b3c8864082211d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.25
+      value: -10.087759
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a565efbdeeda4b45b3c8864082211d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -35.41
+      value: -35.3375
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a565efbdeeda4b45b3c8864082211d2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7611778
+      value: 0.76065314
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a565efbdeeda4b45b3c8864082211d2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.11940517
+      value: 0.122416236
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a565efbdeeda4b45b3c8864082211d2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.62831056
+      value: -0.6277308
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a565efbdeeda4b45b3c8864082211d2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.10759515
+      value: -0.11124338
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a565efbdeeda4b45b3c8864082211d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8918,7 +8918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a565efbdeeda4b45b3c8864082211d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -18.312
+      value: -18.861
       objectReference: {fileID: 0}
     - target: {fileID: -7268826211594752989, guid: 2a565efbdeeda4b45b3c8864082211d2, type: 3}
       propertyPath: m_LocalScale.x
@@ -15334,6 +15334,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993385350}
   m_Mesh: {fileID: -6466293406763454546, guid: 2453672dd17367140a4c7889e7584251, type: 3}
+--- !u!1 &2001614956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001614957}
+  m_Layer: 0
+  m_Name: WinBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2001614957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001614956}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2002344854
 GameObject:
   m_ObjectHideFlags: 0
@@ -17173,3 +17204,4 @@ SceneRoots:
   - {fileID: 1131669185}
   - {fileID: 1660848112}
   - {fileID: 317121250}
+  - {fileID: 2001614957}
