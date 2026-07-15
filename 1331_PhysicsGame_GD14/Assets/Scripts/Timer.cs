@@ -3,20 +3,20 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    public float _timer;
+    public float _time;
     [SerializeField] private TextMeshProUGUI _timeText;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _timer = 0f;
+        _time = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        _timer += Time.deltaTime;
-        _timeText.text = "Score: " + _timer;
+        _time += Time.deltaTime;
+        _timeText.text = "Score: " + _time;
     }
 }
