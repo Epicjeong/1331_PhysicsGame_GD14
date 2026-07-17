@@ -17,6 +17,6 @@ public class Timer : MonoBehaviour
     void Update()
     {
         _time += Time.deltaTime;
-        _timeText.text = "Score: " + _time;
+        _timeText.text = "Timer: " + _time;
     }
 }

@@ -9,7 +9,7 @@ public class WinGame : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        _finalTimeText.text = "Your final time was " + _timer._time;
+        _finalTimeText.text = "" + _timer._time;
         _winScreen.SetActive(true);
     }
 }
