@@ -6,6 +6,7 @@ public class MoveBall : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private Vector3 _force;
     [SerializeField] private Rigidbody _rb;
+    [SerializeField] private AudioSource _rollSound;
 
     private Vector2 _input;
 
@@ -31,5 +32,18 @@ public class MoveBall : MonoBehaviour
         _input = context.ReadValue<Vector2>();
         _force.x = _speed * _input.x;
         if (context.canceled) _force = Vector3.zero;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground") && !_rollSound.isPlaying)
+        {
+            _rollSound.Play();
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        _rollSound.Stop();
     }
 }

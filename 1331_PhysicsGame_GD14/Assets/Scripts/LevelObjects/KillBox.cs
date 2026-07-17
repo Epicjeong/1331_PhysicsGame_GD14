@@ -10,7 +10,7 @@ public class KillBox : MonoBehaviour
     {
         _ballRB = _ball.GetComponent<Rigidbody>();
     }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         _ballRB.linearVelocity = Vector3.zero;
         _ball.transform.position = _spawn.transform.position;
