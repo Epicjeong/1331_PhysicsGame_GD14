@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class MoveBall : MonoBehaviour
 {
-
+    [SerializeField] private float _speed;
     [SerializeField] private Vector3 _force;
     [SerializeField] private Rigidbody _rb;
 
@@ -29,7 +29,7 @@ public class MoveBall : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         _input = context.ReadValue<Vector2>();
-        _force.x = _force.x + _input.x;
+        _force.x = _speed * _input.x;
         if (context.canceled) _force = Vector3.zero;
     }
 }
